@@ -1,0 +1,113 @@
+h1 {
+  font-weight: 300;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+#rating {
+  min-width: 40px;
+}
+
+#game-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  max-width:600px;
+  min-width:200px;
+  margin: auto;
+}
+
+#end-model {
+  flex-wrap: wrap
+  justify-content: space-between;
+  align-items: baseline;
+  max-width: 300px;
+  margin: auto;
+}
+
+#end-model > div {
+  width: 100%;
+}
+
+#end-model > h2 {
+  width: 100%;
+}
+
+#end-model > div > span {
+  width: 80%;
+  text-align: right;
+}
+
+#reset-game {
+  border: none;
+  min-width: 48px;
+  min-height: 48px;
+}
+
+.game-flex {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.game-flex > label {
+  margin: 20px; 
+}
+
+.game-hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.card {
+  background-color: #333;  
+  width: 20vw;
+  height: 20vw;
+  max-width: 170px;
+  max-height: 180px;
+  min-width: 80px;
+  min-height: 80px;
+  margin: 1%;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* sigles */
+
+.sigle {
+  color: white;
+}
+
+button {
+  font-size: 22px;
+}
+
+button.card {
+  font-size:33px;
+}
+
+button.red {
+  background: #cc3302;
+}
+
+button.green {
+  background: #02ccba;
+}
+
+button.blue {
+  background: #02b3e4; 
+}
+
+/* Matching Animations */
+
+.mismatch {
+}
+
+.good-match {
+}
+
+
+

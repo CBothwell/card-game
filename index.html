@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+  <h1>Matching Game</h1>
+
+  <div id="start-model" class="game-flex">
+    <label>Player Name:
+      <input type="text" id="player-name"></input>
+    </label>
+    <button id='start-game'>Play Game!</button>
+  </div>
+
+  <div id="end-model" class="game-hidden game-flex" hidden>
+      <div><h2>Congratulations:&nbsp;<div id="complete-player-name"></div></h2></div>
+      <div id="end-moves">Moves: <span class="move-count"></span></div>
+      <div id="end-stars">Stars: <span class="rating"></span></div>
+      <div id="end-time" >Time:  <span class="game-clock">00:00:00</span></div>
+      <button id='restart-game'>Restart Game!</button>
+  </div>
+
+  <div id="game" class="game-hidden">
+    <span id="game-stats">
+      <span class="stat">
+        <span class="rating">
+        </span>
+        <span id="moves">&nbsp;<span class="move-count">0</span> Moves</span>
+      </span>
+      <span class="stat">
+        <button id="reset-game" class="stat" >
+          <i class="fas fa-redo-alt"></i>
+        </button>
+        <span class="game-clock">00:00:00</span>
+      </span>
+    </span>
+    <div id="board" class="game-flex">
+      <button class="card" id="0"></button>
+      <button class="card" id="1"></button>
+      <button class="card" id="2"></button>
+      <button class="card" id="3"></button>
+
+      <button class="card" id="4"></button>
+      <button class="card" id="5"></button>
+      <button class="card" id="6"></button>
+      <button class="card" id="7"></button>
+
+      <button class="card" id="8"></button>
+      <button class="card" id="9"></button>
+      <button class="card" id="10"></button>
+      <button class="card" id="11"></button>
+
+      <button class="card" id="12"></button>
+      <button class="card" id="13"></button>
+      <button class="card" id="14"></button>
+      <button class="card" id="15"></button>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/card_game.js"></script>
+</body>
+</html>
